@@ -10,7 +10,7 @@ public class Client {
         BufferedWriter bufferedWriter = null;
         Scanner sc = new Scanner(System.in);
         try {
-            socket = new Socket("localhost", 8066);
+            socket = new Socket("localhost", 8833);
             outputStreamWriter = new OutputStreamWriter(socket.getOutputStream());
             bufferedWriter = new BufferedWriter(outputStreamWriter);
             while (true) {
@@ -19,8 +19,6 @@ public class Client {
                 bufferedWriter.newLine();
                 bufferedWriter.flush();
             }
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
