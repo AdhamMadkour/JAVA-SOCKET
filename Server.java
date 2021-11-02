@@ -8,7 +8,7 @@ public class Server {
         Socket socket = null;
         InputStreamReader inputStreamReader = null;
         BufferedReader bufferedReader = null;
-        serverSocket = new ServerSocket(8066);
+        serverSocket = new ServerSocket(8833);
         while (true) {
             try {
                 socket = serverSocket.accept();
